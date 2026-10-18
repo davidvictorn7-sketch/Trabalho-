@@ -1,0 +1,28 @@
+SISTEMA DE BIBLIOTECA — IMPLEMENTAÇÃO CONFORME O DIAGRAMA UML
+
+Arquivos:
+Aplicacao.java
+Biblioteca.java
+Leitor.java
+Livro.java
+Emprestimo.java
+ItemEmprestimo.java
+
+Executar:
+1. Instale um JDK Java.
+2. Abra o terminal na pasta dos arquivos.
+3. Compile: javac *.java
+4. Execute: java Aplicacao
+
+O código segue os nomes e responsabilidades do diagrama da atividade:
+- Aplicacao.executar()
+- Biblioteca.cadastrarLeitor(Leitor), consultarLeitor(int), listarLeitores(),
+  removerLeitor(Leitor), cadastrarLivro(Livro), consultarLivro(int), listarLivros(),
+  removerLivro(Livro), registrarEmprestimo(int, Leitor, ArrayList<Livro>),
+  listarEmprestimos() e registrarDevolucao(int).
+- Leitor.atualizarDados(String, String)
+- Livro.atualizarDados(String, String), emprestar() e devolver()
+- Emprestimo.adicionarLivro(Livro), contemLivro(Livro) e finalizar()
+- ItemEmprestimo.registrarDevolucao()
+
+Os dados existem somente enquanto o programa está aberto, conforme a atividade.
